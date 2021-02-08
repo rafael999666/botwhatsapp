@@ -472,6 +472,7 @@ case 'lofi':
 					if (args.length < 1) return reply('qual txt deseja lindx?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
+                                        }
 					break
 				case 'play':   
 	          if (!isUser) return reply(mess.only.daftarB)
